@@ -1,0 +1,101 @@
+run_accession	sample_accession	sample_alias	title	isolate	tissue	age	sex
+SRR12750670	SAMN16326767	S99	OSCC 49	N49_OSCC	Well differentiated Squamous Cell Carcinoma	65	male
+SRR12750678	SAMN16326759	S91	OSCC 41	N41_OSCC	Well differentiated Squamous Cell Carcinoma	65	female
+SRR12750681	SAMN16326757	S89	OSCC 39	N39_OSCC	Well differentiated Squamous Cell Carcinoma	62	female
+SRR12750684	SAMN16326754	S86	OSCC 36	N36_OSCC	Well differentiated Squamous Cell Carcinoma	44	male
+SRR12750686	SAMN16326752	S84	OSCC 34	N34_OSCC	Well differentiated Squamous Cell Carcinoma	30	female
+SRR12750691	SAMN16326729	S61	OSCC 11	N11_OSCC	Well differentiated Squamous Cell Carcinoma	63	male
+SRR12750693	SAMN16326728	S60	OSCC 10	N10_OSCC	Well differentiated Squamous Cell Carcinoma	42	female
+SRR12750696	SAMN16326725	S57	OSCC 7	N7_OSCC	Well differentiated Squamous Cell Carcinoma	48	male
+SRR12750700	SAMN16326721	S53	OSCC 3	N3_OSCC	Well differentiated Squamous Cell Carcinoma	54	female
+SRR12750701	SAMN16326720	S52	OSCC 2	N2_OSCC	Well differentiated Squamous Cell Carcinoma	60	female
+SRR12750708	SAMN16326696	S28	Normal 28	N28_Matched Control	Oral Squamus Cells	45	male
+SRR12750710	SAMN16326694	S26	Normal 26	N26_Matched Control	Oral Squamus Cells	60	male
+SRR12750711	SAMN16326693	S25	Normal 25	N25_Matched Control	Oral Squamus Cells	60	male
+SRR12750712	SAMN16326692	S24	Normal 24	N24_Matched Control	Oral Squamus Cells	60	male
+SRR12750716	SAMN16326671	S3	Normal 3	N3_Matched Control	Oral Squamus Cells	54	female
+SRR12750718	SAMN16326687	S19	Normal 19	N19_Matched Control	Oral Squamus Cells	45	female
+SRR12750719	SAMN16326686	S18	Normal 18	N18_Matched Control	Oral Squamus Cells	50	female
+SRR12750724	SAMN16326681	S13	Normal 13	N13_Matched Control	Oral Squamus Cells	35	male
+SRR12750727	SAMN16326751	S83	OSCC 33	N33_OSCC	Well differentiated Squamous Cell Carcinoma	47	male
+SRR12750730	SAMN16326677	S9	Normal 9	N9_Matched Control	Oral Squamus Cells	80	female
+SRR12750737	SAMN16326742	S74	OSCC 24	N24_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750744	SAMN16326736	S68	OSCC 18	N18_OSCC	Well differentiated Squamous Cell Carcinoma	50	female
+SRR12750745	SAMN16326735	S67	OSCC 17	N17_OSCC	Well differentiated Squamous Cell Carcinoma	55	male
+SRR12750746	SAMN16326734	S66	OSCC 16	N16_OSCC	Well differentiated Squamous Cell Carcinoma	62	male
+SRR12750747	SAMN16326715	S47	Normal 47	N47_Matched Control	Oral Squamus Cells	55	male
+SRR12750753	SAMN16326709	S41	Normal 41	N41_Matched Control	Oral Squamus Cells	65	female
+SRR12750757	SAMN16326706	S38	Normal 38	N38_Matched Control	Oral Squamus Cells	60	male
+SRR12750759	SAMN16326704	S36	Normal 36	N36_Matched Control	Oral Squamus Cells	44	male
+SRR12750764	SAMN16326699	S31	Normal 31	N31_Matched Control	Oral Squamus Cells	61	male
+SRR12750766	SAMN16326698	S30	Normal 30	N30_Matched Control	Oral Squamus Cells	40	female
+SRR12750767	SAMN16326670	S2	Normal 2	N2_Matched Control	Oral Squamus Cells	60	female
+SRR12750672	SAMN16326765	S97	OSCC 47	N47_OSCC	Well differentiated Squamous Cell Carcinoma	55	male
+SRR12750675	SAMN16326762	S94	OSCC 44	N44_OSCC	Well differentiated Squamous Cell Carcinoma	56	male
+SRR12750679	SAMN16326678	S10	Normal 10	N10_Matched Control	Oral Squamus Cells	42	female
+SRR12750680	SAMN16326758	S90	OSCC 40	N40_OSCC	Well differentiated Squamous Cell Carcinoma	65	female
+SRR12750688	SAMN16326732	S64	OSCC 14	N14_OSCC	Well differentiated Squamous Cell Carcinoma	50	male
+SRR12750692	SAMN16326675	S7	Normal 7	N7_Matched Control	Oral Squamus Cells	48	male
+SRR12750694	SAMN16326727	S59	OSCC 9	N9_OSCC	Well differentiated Squamous Cell Carcinoma	80	female
+SRR12750695	SAMN16326726	S58	OSCC 8	N8_OSCC	Well differentiated Squamous Cell Carcinoma	44	male
+SRR12750699	SAMN16326722	S54	OSCC 4	N4_OSCC	Well differentiated Squamous Cell Carcinoma	36	male
+SRR12750702	SAMN16326719	S51	OSCC 1	N1_OSCC	Well differentiated Squamous Cell Carcinoma	37	male
+SRR12750703	SAMN16326674	S6	Normal 6	N6_Matched Control	Oral Squamus Cells	70	female
+SRR12750704	SAMN16326718	S50	Normal 50	N50_Matched Control	Oral Squamus Cells	62	female
+SRR12750707	SAMN16326697	S29	Normal 29	N29_Matched Control	Oral Squamus Cells	60	male
+SRR12750714	SAMN16326690	S22	Normal 22	N22_Matched Control	Oral Squamus Cells	65	female
+SRR12750721	SAMN16326684	S16	Normal 16	N16_Matched Control	Oral Squamus Cells	62	male
+SRR12750723	SAMN16326682	S14	Normal 14	N14_Matched Control	Oral Squamus Cells	50	male
+SRR12750725	SAMN16326680	S12	Normal 12	N12_Matched Control	Oral Squamus Cells	45	male
+SRR12750728	SAMN16326750	S82	OSCC 32	N32_OSCC	Well differentiated Squamous Cell Carcinoma	45	female
+SRR12750731	SAMN16326748	S80	OSCC 30	N30_OSCC	Well differentiated Squamous Cell Carcinoma	40	female
+SRR12750732	SAMN16326747	S79	OSCC 29	N29_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750734	SAMN16326745	S77	OSCC 27	N27_OSCC	Well differentiated Squamous Cell Carcinoma	32	male
+SRR12750735	SAMN16326744	S76	OSCC 26	N26_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750740	SAMN16326739	S71	OSCC 21	N21_OSCC	Well differentiated Squamous Cell Carcinoma	40	male
+SRR12750741	SAMN16326676	S8	Normal 8	N8_Matched Control	Oral Squamus Cells	44	male
+SRR12750743	SAMN16326737	S69	OSCC 19	N19_OSCC	Well differentiated Squamous Cell Carcinoma	45	female
+SRR12750748	SAMN16326714	S46	Normal 46	N46_Matched Control	Oral Squamus Cells	40	male
+SRR12750749	SAMN16326713	S45	Normal 45	N45_Matched Control	Oral Squamus Cells	42	male
+SRR12750750	SAMN16326712	S44	Normal 44	N44_Matched Control	Oral Squamus Cells	56	male
+SRR12750755	SAMN16326708	S40	Normal 40	N40_Matched Control	Oral Squamus Cells	65	female
+SRR12750761	SAMN16326702	S34	Normal 34	N34_Matched Control	Oral Squamus Cells	30	female
+SRR12750765	SAMN16326672	S4	Normal 4	N4_Matched Control	Oral Squamus Cells	36	male
+SRR12750669	SAMN16326768	S100	OSCC 50	N50_OSCC	Well differentiated Squamous Cell Carcinoma	62	female
+SRR12750671	SAMN16326766	S98	OSCC 48	N48_OSCC	Well differentiated Squamous Cell Carcinoma	57	male
+SRR12750673	SAMN16326764	S96	OSCC 46	N46_OSCC	Well differentiated Squamous Cell Carcinoma	40	male
+SRR12750674	SAMN16326763	S95	OSCC 45	N45_OSCC	Well differentiated Squamous Cell Carcinoma	42	male
+SRR12750676	SAMN16326761	S93	OSCC 43	N43_OSCC	Well differentiated Squamous Cell Carcinoma	52	female
+SRR12750677	SAMN16326760	S92	OSCC 42	N42_OSCC	Well differentiated Squamous Cell Carcinoma	41	male
+SRR12750682	SAMN16326756	S88	OSCC 38	N38_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750683	SAMN16326755	S87	OSCC 37	N37_OSCC	Well differentiated Squamous Cell Carcinoma	38	male
+SRR12750685	SAMN16326753	S85	OSCC 35	N35_OSCC	Well differentiated Squamous Cell Carcinoma	59	male
+SRR12750687	SAMN16326733	S65	OSCC 15	N15_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750689	SAMN16326731	S63	OSCC 13	N13_OSCC	Well differentiated Squamous Cell Carcinoma	35	male
+SRR12750690	SAMN16326730	S62	OSCC 12	N12_OSCC	Well differentiated Squamous Cell Carcinoma	45	male
+SRR12750697	SAMN16326724	S56	OSCC 6	N6_OSCC	Well differentiated Squamous Cell Carcinoma	70	female
+SRR12750698	SAMN16326723	S55	OSCC 5	N5_OSCC	Well differentiated Squamous Cell Carcinoma	62	female
+SRR12750705	SAMN16326717	S49	Normal 49	N49_Matched Control	Oral Squamus Cells	65	male
+SRR12750706	SAMN16326716	S48	Normal 48	N48_Matched Control	Oral Squamus Cells	57	male
+SRR12750709	SAMN16326695	S27	Normal 27	N27_Matched Control	Oral Squamus Cells	32	male
+SRR12750713	SAMN16326691	S23	Normal 23	N23_Matched Control	Oral Squamus Cells	73	male
+SRR12750715	SAMN16326689	S21	Normal 21	N21_Matched Control	Oral Squamus Cells	40	male
+SRR12750717	SAMN16326688	S20	Normal 20	N20_Matched Control	Oral Squamus Cells	55	female
+SRR12750720	SAMN16326685	S17	Normal 17	N17_Matched Control	Oral Squamus Cells	55	male
+SRR12750722	SAMN16326683	S15	Normal 15	N15_Matched Control	Oral Squamus Cells	60	male
+SRR12750726	SAMN16326679	S11	Normal 11	N11_Matched Control	Oral Squamus Cells	63	male
+SRR12750729	SAMN16326749	S81	OSCC 31	N31_OSCC	Well differentiated Squamous Cell Carcinoma	61	male
+SRR12750733	SAMN16326746	S78	OSCC 28	N28_OSCC	Well differentiated Squamous Cell Carcinoma	45	male
+SRR12750736	SAMN16326743	S75	OSCC 25	N25_OSCC	Well differentiated Squamous Cell Carcinoma	60	male
+SRR12750738	SAMN16326741	S73	OSCC 23	N23_OSCC	Well differentiated Squamous Cell Carcinoma	73	male
+SRR12750739	SAMN16326740	S72	OSCC 22	N22_OSCC	Well differentiated Squamous Cell Carcinoma	65	female
+SRR12750742	SAMN16326738	S70	OSCC 20	N20_OSCC	Well differentiated Squamous Cell Carcinoma	55	female
+SRR12750751	SAMN16326711	S43	Normal 43	N43_Matched Control	Oral Squamus Cells	52	female
+SRR12750752	SAMN16326710	S42	Normal 42	N42_Matched Control	Oral Squamus Cells	41	male
+SRR12750754	SAMN16326673	S5	Normal 5	N5_Matched Control	Oral Squamus Cells	62	female
+SRR12750756	SAMN16326707	S39	Normal 39	N39_Matched Control	Oral Squamus Cells	62	female
+SRR12750758	SAMN16326705	S37	Normal 37	N37_Matched Control	Oral Squamus Cells	38	male
+SRR12750760	SAMN16326703	S35	Normal 35	N35_Matched Control	Oral Squamus Cells	59	male
+SRR12750762	SAMN16326701	S33	Normal 33	N33_Matched Control	Oral Squamus Cells	47	male
+SRR12750763	SAMN16326700	S32	Normal 32	N32_Matched Control	Oral Squamus Cells	45	female
+SRR12750768	SAMN16326669	S1	Normal 1	N1_Matched Control	Oral Squamus Cells	37	male

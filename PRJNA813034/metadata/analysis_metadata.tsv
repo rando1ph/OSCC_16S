@@ -1,0 +1,41 @@
+sample-id	patient_id	group	stage	sample_index	library_name	experiment_title
+SRR18236797	T1_P01	Matched_Normal	T1	1	A1	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_1
+SRR18236795	T1_P01	Tumor	T1	1	B1	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_1
+SRR18236796	T1_P02	Matched_Normal	T1	2	A2	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_2
+SRR18236794	T1_P02	Tumor	T1	2	B2	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_2
+SRR18236785	T1_P03	Matched_Normal	T1	3	A3	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_3
+SRR18236793	T1_P03	Tumor	T1	3	B3	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_3
+SRR18236774	T1_P04	Matched_Normal	T1	4	A4	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_4
+SRR18236792	T1_P04	Tumor	T1	4	B4	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_4
+SRR18236763	T1_P05	Matched_Normal	T1	5	A5	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_5
+SRR18236791	T1_P05	Tumor	T1	5	B5	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_5
+SRR18236752	T1_P06	Matched_Normal	T1	6	A6	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_6
+SRR18236790	T1_P06	Tumor	T1	6	B6	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_6
+SRR18236741	T1_P07	Matched_Normal	T1	7	A7	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_7
+SRR18236789	T1_P07	Tumor	T1	7	B7	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_7
+SRR18236730	T1_P08	Matched_Normal	T1	8	A8	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_8
+SRR18236788	T1_P08	Tumor	T1	8	B8	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_8
+SRR18236719	T1_P09	Matched_Normal	T1	9	A9	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_9
+SRR18236787	T1_P09	Tumor	T1	9	B9	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_9
+SRR18236708	T1_P10	Matched_Normal	T1	10	A10	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T1_stage_sample_10
+SRR18236786	T1_P10	Tumor	T1	10	B10	Illumina HiSeq 2500 sequencing: T1_Stage Tumor tissue_10
+SRR18236746	T4_P01	Matched_Normal	T4	1	Y1	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_1
+SRR18236735	T4_P01	Tumor	T4	1	Z1	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_1
+SRR18236745	T4_P02	Matched_Normal	T4	2	Y2	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_2
+SRR18236734	T4_P02	Tumor	T4	2	Z2	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_2
+SRR18236744	T4_P03	Matched_Normal	T4	3	Y3	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_3
+SRR18236733	T4_P03	Tumor	T4	3	Z3	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_3
+SRR18236743	T4_P04	Matched_Normal	T4	4	Y4	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_4
+SRR18236732	T4_P04	Tumor	T4	4	Z4	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_4
+SRR18236742	T4_P05	Matched_Normal	T4	5	Y5	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_5
+SRR18236731	T4_P05	Tumor	T4	5	Z5	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_5
+SRR18236740	T4_P06	Matched_Normal	T4	6	Y6	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_6
+SRR18236729	T4_P06	Tumor	T4	6	Z6	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_6
+SRR18236739	T4_P07	Matched_Normal	T4	7	Y7	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_7
+SRR18236728	T4_P07	Tumor	T4	7	Z7	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_7
+SRR18236738	T4_P08	Matched_Normal	T4	8	Y8	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_8
+SRR18236727	T4_P08	Tumor	T4	8	Z8	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_8
+SRR18236737	T4_P09	Matched_Normal	T4	9	Y9	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_9
+SRR18236726	T4_P09	Tumor	T4	9	Z9	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_9
+SRR18236736	T4_P10	Matched_Normal	T4	10	Y10	Illumina HiSeq 2500 sequencing: Tissue adjacent to a tumor from T4_stage_sample_10
+SRR18236725	T4_P10	Tumor	T4	10	Z10	Illumina HiSeq 2500 sequencing: T4_Stage Tumor tissue_10

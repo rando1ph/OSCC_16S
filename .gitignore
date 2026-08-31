@@ -1,0 +1,38 @@
+# Raw sequencing data
+**/raw/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+*.aria2
+
+# Processed sequencing reads
+**/processed/*.fastq
+**/processed/*.fastq.gz
+**/processed/*.fq
+**/processed/*.fq.gz
+
+# Temporary files
+**/.tmp_*/
+tmp/
+temp/
+nohup.out
+
+# Python
+__pycache__/
+*.pyc
+
+# Conda / virtual environments
+.conda/
+.venv/
+env/
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
+
+# Regenerable download-monitoring logs
+**/logs/fastq_download.log
+**/logs/download_watch.log

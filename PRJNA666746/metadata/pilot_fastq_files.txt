@@ -1,0 +1,8 @@
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750669_1.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750669_2.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750671_1.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750671_2.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750672_1.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750672_2.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750673_1.fastq.gz
+/home/ubuntu/OSCC_16S/PRJNA666746/raw/SRR12750673_2.fastq.gz

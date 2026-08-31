@@ -1,0 +1,41 @@
+This is cutadapt 5.2 with Python 3.12.3
+Command line parameters: -j 4 -e 0.15 --no-indels -g ^GACTACHVGGGTATCTAATCC -G ^CCTACGGGNGGCWGCAG --discard-untrimmed -o /dev/null -p /dev/null raw/SRR12750669_1.fastq.gz raw/SRR12750669_2.fastq.gz
+Processing paired-end reads on 4 cores ...
+
+=== Summary ===
+
+Total read pairs processed:            927,912
+  Read 1 with adapter:                 404,233 (43.6%)
+  Read 2 with adapter:                 390,837 (42.1%)
+
+== Read fate breakdown ==
+Pairs discarded as untrimmed:          568,650 (61.3%)
+Pairs written (passing filters):       359,262 (38.7%)
+
+Total basepairs processed:   465,811,824 bp
+  Read 1:   232,905,912 bp
+  Read 2:   232,905,912 bp
+Total written (filtered):    166,697,568 bp (35.8%)
+  Read 1:    82,630,260 bp
+  Read 2:    84,067,308 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GACTACHVGGGTATCTAATCC; Type: anchored 5'; Length: 21; Trimmed: 404233 times
+
+No. of allowed errors: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+21	404233	0.0	3	367662 25460 5939 5172
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CCTACGGGNGGCWGCAG; Type: anchored 5'; Length: 17; Trimmed: 390837 times
+
+No. of allowed errors: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+17	390837	0.0	2	358827 24143 7867
