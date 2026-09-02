@@ -1,0 +1,6 @@
+cohort	stage	status	updated	note
+PRJNA666746	genus_stats	VALIDATED	2026-09-02 14:39:15	DADA2_ASV / SILVA_138.2
+PRJNA822685	genus_stats	VALIDATED	2026-09-02 14:39:15	DADA2_ASV / SILVA_138.2
+PRJNA813034	genus_stats	VALIDATED	2026-09-02 14:39:15	OTU_VSEARCH_97 / Greengenes_13_8
+all	three_cohort_integration	COMPLETED	2026-09-02 14:39:15	genus-level; counts not pooled
+all	ml_leave_one_cohort_out	NOT_RUN	2026-09-02 14:39:15	optional; deferred

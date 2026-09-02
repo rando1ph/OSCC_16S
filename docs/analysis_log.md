@@ -88,3 +88,27 @@ Raw reads and ASVs will not be merged directly across studies.
 Downstream cross-cohort comparison will use a shared taxonomic level,
 primarily genus-level abundance, followed by assessment of consistent
 Tumor-vs-Matched_Normal effects across cohorts.
+
+## Final validated state (2026-09-02)
+
+All three cohort-level genus pipelines are complete and validated:
+
+- PRJNA666746: DADA2_ASV, SILVA 138.2, 50 complete pairs, 480 genera.
+- PRJNA822685: DADA2_ASV, SILVA 138.2, 56 complete pairs, 239 genera.
+- PRJNA813034: OTU_VSEARCH_97 sensitivity cohort, Greengenes 13_8,
+  20 complete pairs, 283 genera (0 genera q<0.1; 60 nominal p<0.05).
+
+Genus-level statistics were re-derived from underlying genus count tables,
+metadata and depth status and matched the on-disk files to file precision
+(see scripts/overnight/validate_cohorts.py, PASS for all three cohorts).
+
+Three-cohort genus-level integration, harmonization, cross-cohort
+consistency, candidate ranking, tables, plots and the updated report are in
+combined/three_cohort/. The preserved two-cohort results remain in
+combined/two_cohort/. The integration treats PRJNA813034 as a Greengenes
+OTU sensitivity cohort; counts are never pooled across cohorts and
+taxonomy-database naming differences are not treated as biological absence.
+
+Key generation scripts:
+- scripts/overnight/three_cohort_integration.py
+- scripts/overnight/validate_cohorts.py

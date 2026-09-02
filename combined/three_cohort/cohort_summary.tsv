@@ -1,0 +1,4 @@
+cohort	analysis_route	taxonomy	design	database	samples_processed	complete_pairs	excluded_samples	low_depth_excluded	n_genera	n_genera_nominal_p0.05	n_genera_sig_q0.1	mean_raw_pairs	mean_final_retained_pairs	mean_bacterial_reads_postqc	low_bacterial_reads_samples
+PRJNA666746	DADA2_ASV	SILVA_138.2	primary	SILVA	100	50	0	0	480	372	389	974730	99757.6	37635.5	
+PRJNA822685	DADA2_ASV	SILVA_138.2	primary	SILVA	162	56	50	27	239	151	168	41933.2	33825.1	7233.4	
+PRJNA813034	OTU_VSEARCH_97	Greengenes_13_8	sensitivity	Greengenes	40	20	0	0	283	60	0	554618	87029.6	61781.9	2

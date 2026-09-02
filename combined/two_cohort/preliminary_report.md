@@ -1,0 +1,192 @@
+# OSCC 16S preliminary multi-cohort report
+
+Generated: 2026-09-01 15:38:49.665589
+Cohorts integrated: PRJNA666746, PRJNA822685
+
+## Methods
+
+- Each cohort processed independently; SILVA 138.2 taxonomy; genus collapse.
+- Primary cohorts (PRJNA666746, PRJNA822685): DADA2 denoising (ASV route).
+- PRJNA813034: OTU-based sensitivity analysis (VSEARCH paired-read merge, dereplication and 99% de novo OTU clustering). DADA2 is not applicable to this cohort because its discrete quality scores prevent error-model estimation. PRJNA813034 results are treated as sensitivity validation only.
+- Genera marked [OTU] in consistent_genera.tsv are from the sensitivity cohort.
+- Genus-level CLR transform applied with a single consistent pseudocount of 0.5.
+- Per-genus paired Wilcoxon signed-rank test on Tumor-Matched_Normal paired CLR differences; BH-FDR across genera.
+- Samples with <2000 non-chimeric reads flagged LOW_DEPTH; if one member of a pair is excluded, the whole pair is removed.
+- Genera ranked primarily by cross-cohort effect-direction consistency, statistical support (q<0.1), and effect magnitude.
+- Association, not causation.
+
+## Cohort summary
+
+| cohort      | analysis_route   |   samples_processed |   mean_raw_pairs |   mean_pretrim_pairs |   mean_valid_primer_pairs |   mean_final_retained_pairs |   mean_valid_fraction |   samples_dada2 |   mean_input_reads |   mean_non_chimeric_reads |   low_depth_samples |   complete_pairs |   n_genera |   n_genera_sig_q0.1 |
+|:------------|:-----------------|--------------------:|-----------------:|---------------------:|--------------------------:|----------------------------:|----------------------:|----------------:|-------------------:|--------------------------:|--------------------:|-----------------:|-----------:|--------------------:|
+| PRJNA666746 | DADA2_ASV        |                 100 |         974730   |             150000   |                  112512   |                     99757.6 |                0.7501 |             100 |            99757.6 |                   38924.8 |                   0 |               50 |        480 |                 389 |
+| PRJNA822685 | DADA2_ASV        |                 162 |          41933.2 |              41933.2 |                   34648.3 |                     33825.1 |                0.7839 |             162 |            33825.1 |                    7267.5 |                  27 |               56 |        239 |                 168 |
+
+## Top 20 candidate genera
+
+| genus                              |   n_cohorts |   n_same_sign |   direction_consistent | direction   |   n_sig_q0.1 |       min_q |   mean_abs_effect |   mean_median_effect |   score |
+|:-----------------------------------|------------:|--------------:|-----------------------:|:------------|-------------:|------------:|------------------:|---------------------:|--------:|
+| g__Campylobacter                   |           2 |             2 |                      1 | up          |            2 | 0.0154164   |          0.667732 |             0.667732 | 5.00319 |
+| g__Catonella                       |           2 |             2 |                      1 | up          |            2 | 0.013465    |          0.622888 |             0.622888 | 4.86866 |
+| g__Actinomyces                     |           2 |             2 |                      1 | down        |            2 | 0.00412384  |          0.573613 |            -0.573613 | 4.72084 |
+| g__Peptostreptococcus              |           2 |             2 |                      1 | up          |            2 | 0.0180647   |          0.520331 |             0.520331 | 4.56099 |
+| g__Megasphaera                     |           2 |             2 |                      1 | down        |            2 | 0.0455351   |          0.509504 |            -0.509504 | 4.52851 |
+| g__Filifactor                      |           2 |             2 |                      1 | up          |            2 | 0.000390308 |          0.223551 |             0.223551 | 3.67065 |
+| g__Lentimicrobium                  |           2 |             2 |                      1 | up          |            2 | 0.0388238   |          0.199935 |             0.199935 | 3.5998  |
+| g__Peptoanaerobacter               |           2 |             2 |                      1 | up          |            2 | 0.00323962  |          0.179712 |             0.179712 | 3.53914 |
+| g__Family_XIII_UCG-001             |           2 |             2 |                      1 | up          |            2 | 0.0225841   |          0.158214 |             0.158214 | 3.47464 |
+| g__[Eubacterium]_yurii_group       |           2 |             2 |                      1 | up          |            2 | 0.0388238   |          0.153948 |             0.153948 | 3.46185 |
+| g__Erythrobacter                   |           2 |             2 |                      1 | up          |            2 | 8.87297e-05 |          0.153785 |             0.153785 | 3.46136 |
+| g__Butyrivibrio                    |           2 |             2 |                      1 | up          |            2 | 0.00157225  |          0.149991 |             0.149991 | 3.44997 |
+| g__Deinococcus                     |           2 |             2 |                      1 | up          |            2 | 0.01315     |          0.149991 |             0.149991 | 3.44997 |
+| g__Aeromonas                       |           2 |             2 |                      1 | up          |            2 | 8.87297e-05 |          0.144782 |             0.144782 | 3.43435 |
+| g__Alysiella                       |           2 |             2 |                      1 | up          |            2 | 0.00323962  |          0.141406 |             0.141406 | 3.42422 |
+| g__Streptobacillus                 |           2 |             2 |                      1 | up          |            2 | 0.00157225  |          0.136266 |             0.136266 | 3.4088  |
+| g__Blvii28_wastewater-sludge_group |           2 |             2 |                      1 | up          |            2 | 0.000803043 |          0.131816 |             0.131816 | 3.39545 |
+| g__Chryseobacterium                |           2 |             2 |                      1 | up          |            2 | 0.00477742  |          0.131259 |             0.131259 | 3.39378 |
+| g__Luteimonas                      |           2 |             2 |                      1 | up          |            2 | 0.000276844 |          0.127465 |             0.127465 | 3.3824  |
+| g__Enterococcus                    |           2 |             2 |                      1 | up          |            2 | 0.00464946  |          0.124452 |             0.124452 | 3.37336 |
+
+## Consistent genera (same direction in >=2 cohorts, q<0.1 in >=1)
+
+| genus                              |   n_cohorts | direction   |       min_q |   n_sig_q0.1 |   mean_abs_effect |   mean_median_effect | cohort_effects                            |
+|:-----------------------------------|------------:|:------------|------------:|-------------:|------------------:|---------------------:|:------------------------------------------|
+| g__Campylobacter                   |           2 | up          | 0.0154164   |            2 |         0.667732  |            0.667732  | PRJNA666746(+0.993);PRJNA822685(+0.342)   |
+| g__Catonella                       |           2 | up          | 0.013465    |            2 |         0.622888  |            0.622888  | PRJNA666746(+0.666);PRJNA822685(+0.58)    |
+| g__Actinomyces                     |           2 | down        | 0.00412384  |            2 |         0.573613  |           -0.573613  | PRJNA666746(-1.04);PRJNA822685(-0.111)    |
+| g__Peptostreptococcus              |           2 | up          | 0.0180647   |            2 |         0.520331  |            0.520331  | PRJNA666746(+0.225);PRJNA822685(+0.815)   |
+| g__Megasphaera                     |           2 | down        | 0.0455351   |            2 |         0.509504  |           -0.509504  | PRJNA666746(-0.931);PRJNA822685(-0.088)   |
+| g__Filifactor                      |           2 | up          | 0.000390308 |            2 |         0.223551  |            0.223551  | PRJNA666746(+0.25);PRJNA822685(+0.197)    |
+| g__Lentimicrobium                  |           2 | up          | 0.0388238   |            2 |         0.199935  |            0.199935  | PRJNA666746(+0.171);PRJNA822685(+0.229)   |
+| g__Peptoanaerobacter               |           2 | up          | 0.00323962  |            2 |         0.179712  |            0.179712  | PRJNA666746(+0.185);PRJNA822685(+0.174)   |
+| g__Family_XIII_UCG-001             |           2 | up          | 0.0225841   |            2 |         0.158214  |            0.158214  | PRJNA666746(+0.185);PRJNA822685(+0.131)   |
+| g__[Eubacterium]_yurii_group       |           2 | up          | 0.0388238   |            2 |         0.153948  |            0.153948  | PRJNA666746(+0.139);PRJNA822685(+0.169)   |
+| g__Erythrobacter                   |           2 | up          | 8.87297e-05 |            2 |         0.153785  |            0.153785  | PRJNA666746(+0.216);PRJNA822685(+0.0912)  |
+| g__Butyrivibrio                    |           2 | up          | 0.00157225  |            2 |         0.149991  |            0.149991  | PRJNA666746(+0.216);PRJNA822685(+0.0836)  |
+| g__Deinococcus                     |           2 | up          | 0.01315     |            2 |         0.149991  |            0.149991  | PRJNA666746(+0.216);PRJNA822685(+0.0836)  |
+| g__Aeromonas                       |           2 | up          | 8.87297e-05 |            2 |         0.144782  |            0.144782  | PRJNA666746(+0.198);PRJNA822685(+0.0912)  |
+| g__Alysiella                       |           2 | up          | 0.00323962  |            2 |         0.141406  |            0.141406  | PRJNA666746(+0.171);PRJNA822685(+0.112)   |
+| g__Streptobacillus                 |           2 | up          | 0.00157225  |            2 |         0.136266  |            0.136266  | PRJNA666746(+0.171);PRJNA822685(+0.101)   |
+| g__Blvii28_wastewater-sludge_group |           2 | up          | 0.000803043 |            2 |         0.131816  |            0.131816  | PRJNA666746(+0.152);PRJNA822685(+0.112)   |
+| g__Chryseobacterium                |           2 | up          | 0.00477742  |            2 |         0.131259  |            0.131259  | PRJNA666746(+0.171);PRJNA822685(+0.0912)  |
+| g__Luteimonas                      |           2 | up          | 0.000276844 |            2 |         0.127465  |            0.127465  | PRJNA666746(+0.171);PRJNA822685(+0.0836)  |
+| g__Enterococcus                    |           2 | up          | 0.00464946  |            2 |         0.124452  |            0.124452  | PRJNA666746(+0.165);PRJNA822685(+0.0836)  |
+| g__Dietzia                         |           2 | up          | 0.000566597 |            2 |         0.122947  |            0.122947  | PRJNA666746(+0.171);PRJNA822685(+0.0746)  |
+| g__Ottowia                         |           2 | up          | 8.87297e-05 |            2 |         0.122947  |            0.122947  | PRJNA666746(+0.171);PRJNA822685(+0.0746)  |
+| g__Legionella                      |           2 | up          | 0.000286364 |            2 |         0.121669  |            0.121669  | PRJNA666746(+0.152);PRJNA822685(+0.0912)  |
+| g__Neobacillus                     |           2 | up          | 0.000166401 |            2 |         0.121669  |            0.121669  | PRJNA666746(+0.152);PRJNA822685(+0.0912)  |
+| g__Paucibacter                     |           2 | up          | 0.000390308 |            2 |         0.121669  |            0.121669  | PRJNA666746(+0.152);PRJNA822685(+0.0912)  |
+| g__Vulcaniibacterium               |           2 | up          | 0.0345764   |            2 |         0.121118  |            0.121118  | PRJNA666746(+0.151);PRJNA822685(+0.0912)  |
+| g__Christensenellaceae_R-7_group   |           2 | up          | 0.00367787  |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Cloacibacterium                 |           2 | up          | 0.00168911  |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Pseudaeromonas                  |           2 | up          | 8.87297e-05 |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Roseimarinus                    |           2 | up          | 8.87297e-05 |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Ruminococcus                    |           2 | up          | 0.000390308 |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Ruthenibacterium                |           2 | up          | 0.000360936 |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__UCG-002                         |           2 | up          | 0.00118228  |            2 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Anaerovorax                     |           2 | up          | 0.000391488 |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Desulfovibrio                   |           2 | up          | 0.00148434  |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Fluviicola                      |           2 | up          | 8.87297e-05 |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Fuscovulum                      |           2 | up          | 8.87297e-05 |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Leifsonia                       |           2 | up          | 8.87297e-05 |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Novosphingobium                 |           2 | up          | 0.00492534  |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Roseomonas                      |           2 | up          | 0.0345764   |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Variovorax                      |           2 | up          | 8.87297e-05 |            2 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Acidovorax                      |           2 | up          | 0.0338832   |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Alloscardovia                   |           2 | up          | 0.000390308 |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Coprococcus                     |           2 | up          | 0.00039812  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Cryptobacterium                 |           2 | up          | 0.00224673  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Dolosigranulum                  |           2 | up          | 0.00157225  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Family_XIII_AD3011_group        |           2 | up          | 0.00379532  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Fannyhessea                     |           2 | up          | 0.00140447  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Gordonia                        |           2 | up          | 0.000609771 |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Intestinibacter                 |           2 | up          | 0.00154972  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Lachnospira                     |           2 | up          | 0.00452458  |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Phaselicystis                   |           2 | up          | 0.000403338 |            2 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Bilophila                       |           2 | up          | 0.000496365 |            2 |         0.111411  |            0.111411  | PRJNA666746(+0.139);PRJNA822685(+0.0836)  |
+| g__Brevibacterium                  |           2 | up          | 0.0179546   |            2 |         0.111411  |            0.111411  | PRJNA666746(+0.139);PRJNA822685(+0.0836)  |
+| g__Morganella                      |           2 | up          | 0.00156521  |            2 |         0.111411  |            0.111411  | PRJNA666746(+0.139);PRJNA822685(+0.0836)  |
+| g__Eggerthia                       |           2 | up          | 0.0188944   |            2 |         0.110861  |            0.110861  | PRJNA666746(+0.13);PRJNA822685(+0.0912)   |
+| g__Pseudoramibacter                |           2 | up          | 0.0176579   |            2 |         0.110861  |            0.110861  | PRJNA666746(+0.13);PRJNA822685(+0.0912)   |
+| g__Caulobacter                     |           2 | up          | 0.00588081  |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Gemmiger                        |           2 | up          | 0.00157688  |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Lysinibacillus                  |           2 | up          | 0.00541194  |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Prosthecobacter                 |           2 | up          | 0.00157225  |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Proteiniphilum                  |           2 | up          | 0.00157225  |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Skermanella                     |           2 | up          | 0.0039021   |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Sphingobium                     |           2 | up          | 0.0179546   |            2 |         0.109314  |            0.109314  | PRJNA666746(+0.135);PRJNA822685(+0.0836)  |
+| g__Bradyrhizobium                  |           2 | up          | 0.000403338 |            2 |         0.108247  |            0.108247  | PRJNA666746(+0.142);PRJNA822685(+0.0746)  |
+| g__Gardnerella                     |           2 | up          | 0.00157225  |            2 |         0.108247  |            0.108247  | PRJNA666746(+0.142);PRJNA822685(+0.0746)  |
+| g__Aerococcus                      |           2 | up          | 0.0230813   |            2 |         0.107067  |            0.107067  | PRJNA666746(+0.13);PRJNA822685(+0.0836)   |
+| g__Flexilinea                      |           2 | up          | 0.0388238   |            2 |         0.107067  |            0.107067  | PRJNA666746(+0.13);PRJNA822685(+0.0836)   |
+| g__Mycobacterium                   |           2 | up          | 0.0057271   |            2 |         0.107067  |            0.107067  | PRJNA666746(+0.13);PRJNA822685(+0.0836)   |
+| g__Rhizorhabdus                    |           2 | up          | 0.00664124  |            2 |         0.107067  |            0.107067  | PRJNA666746(+0.13);PRJNA822685(+0.0836)   |
+| g__Acholeplasma                    |           2 | up          | 0.00157225  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Anaerococcus                    |           2 | up          | 0.0172614   |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Azospirillum                    |           2 | up          | 0.00157225  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Brucella                        |           2 | up          | 0.00157225  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Lachnospiraceae_NK3A20_group    |           2 | up          | 0.00157225  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Parascardovia                   |           2 | up          | 0.00157225  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Romboutsia                      |           2 | up          | 0.00157688  |            2 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Ralstonia                       |           2 | up          | 0.0179546   |            2 |         0.100986  |            0.100986  | PRJNA666746(+0.111);PRJNA822685(+0.0912)  |
+| g__Finegoldia                      |           2 | up          | 0.0388238   |            2 |         0.0911406 |            0.0911406 | PRJNA666746(+0.0911);PRJNA822685(+0.0912) |
+| g__Veillonella                     |           2 | down        | 2.04004e-05 |            1 |         1.17109   |           -1.17109   | PRJNA666746(-0.275);PRJNA822685(-2.07)    |
+| g__Granulicatella                  |           2 | down        | 9.18705e-06 |            1 |         0.961203  |           -0.961203  | PRJNA666746(-0.473);PRJNA822685(-1.45)    |
+| g__Neisseria                       |           2 | down        | 0.0114911   |            1 |         0.879916  |           -0.879916  | PRJNA666746(-0.211);PRJNA822685(-1.55)    |
+| g__Bergeyella                      |           2 | up          | 0.0179546   |            1 |         0.769624  |            0.769624  | PRJNA666746(+1.53);PRJNA822685(+0.00621)  |
+| g__Fusobacterium                   |           2 | up          | 0.0093789   |            1 |         0.697002  |            0.697002  | PRJNA666746(+0.299);PRJNA822685(+1.1)     |
+| g__Rothia                          |           2 | down        | 0.00410632  |            1 |         0.593055  |           -0.593055  | PRJNA666746(-0.412);PRJNA822685(-0.775)   |
+| g__Streptococcus                   |           2 | down        | 0.000109322 |            1 |         0.578574  |           -0.578574  | PRJNA666746(-0.23);PRJNA822685(-0.927)    |
+| g__Corynebacterium                 |           2 | down        | 0.0230813   |            1 |         0.50124   |           -0.50124   | PRJNA666746(-0.971);PRJNA822685(-0.0319)  |
+| g__Treponema                       |           2 | up          | 0.0308664   |            1 |         0.36399   |            0.36399   | PRJNA666746(+0.152);PRJNA822685(+0.576)   |
+| g__Oribacterium                    |           2 | down        | 0.0388238   |            1 |         0.353579  |           -0.353579  | PRJNA666746(-0.28);PRJNA822685(-0.427)    |
+| g__Parvimonas                      |           2 | up          | 0.0388238   |            1 |         0.328656  |            0.328656  | PRJNA666746(+0.0828);PRJNA822685(+0.575)  |
+| g__Peptococcus                     |           2 | up          | 0.0180647   |            1 |         0.199371  |            0.199371  | PRJNA666746(+0.0889);PRJNA822685(+0.31)   |
+| g__Paracoccus                      |           2 | up          | 0.0388238   |            1 |         0.188491  |            0.188491  | PRJNA666746(+0.286);PRJNA822685(+0.0912)  |
+| g__Enhydrobacter                   |           2 | up          | 0.0388238   |            1 |         0.177408  |            0.177408  | PRJNA666746(+0.264);PRJNA822685(+0.0912)  |
+| g__Kingella                        |           2 | up          | 0.0795398   |            1 |         0.148822  |            0.148822  | PRJNA666746(+0.242);PRJNA822685(+0.0553)  |
+| g__Howardella                      |           2 | up          | 0.000150882 |            1 |         0.137543  |            0.137543  | PRJNA666746(+0.198);PRJNA822685(+0.0767)  |
+| g__Lactobacillus                   |           2 | up          | 0.0104121   |            1 |         0.131259  |            0.131259  | PRJNA666746(+0.171);PRJNA822685(+0.0912)  |
+| g__Johnsonella                     |           2 | up          | 0.0552776   |            1 |         0.125515  |            0.125515  | PRJNA666746(+0.0823);PRJNA822685(+0.169)  |
+| g__Hornefia                        |           2 | up          | 0.000774805 |            1 |         0.121029  |            0.121029  | PRJNA666746(+0.216);PRJNA822685(+0.0257)  |
+| g__TM7a                            |           2 | up          | 0.000747484 |            1 |         0.117875  |            0.117875  | PRJNA666746(+0.152);PRJNA822685(+0.0836)  |
+| g__Sneathia                        |           2 | up          | 0.00135728  |            1 |         0.113357  |            0.113357  | PRJNA666746(+0.152);PRJNA822685(+0.0746)  |
+| g__Bulleidia                       |           2 | up          | 0.00266903  |            1 |         0.113295  |            0.113295  | PRJNA666746(+0.171);PRJNA822685(+0.0553)  |
+| g__Janibacter                      |           2 | up          | 0.0420188   |            1 |         0.112765  |            0.112765  | PRJNA666746(+0.142);PRJNA822685(+0.0836)  |
+| g__Enterobacter                    |           2 | up          | 0.0605615   |            1 |         0.111143  |            0.111143  | PRJNA666746(+0.133);PRJNA822685(+0.0891)  |
+| g__Methylorubrum                   |           2 | up          | 0.0388238   |            1 |         0.110861  |            0.110861  | PRJNA666746(+0.13);PRJNA822685(+0.0912)   |
+| g__Alistipes                       |           2 | up          | 0.0388238   |            1 |         0.108422  |            0.108422  | PRJNA666746(+0.133);PRJNA822685(+0.0836)  |
+| g__Flavobacterium                  |           2 | up          | 0.00588081  |            1 |         0.108247  |            0.108247  | PRJNA666746(+0.142);PRJNA822685(+0.0746)  |
+| g__Leucobacter                     |           2 | up          | 0.00157225  |            1 |         0.108247  |            0.108247  | PRJNA666746(+0.142);PRJNA822685(+0.0746)  |
+| g__Pelospora                       |           2 | up          | 0.00157688  |            1 |         0.105869  |            0.105869  | PRJNA666746(+0.135);PRJNA822685(+0.0767)  |
+| g__Limosilactobacillus             |           2 | up          | 0.00367787  |            1 |         0.104796  |            0.104796  | PRJNA666746(+0.135);PRJNA822685(+0.0746)  |
+| g__Aminipila                       |           2 | up          | 0.00156521  |            1 |         0.103403  |            0.103403  | PRJNA666746(+0.135);PRJNA822685(+0.0718)  |
+| g__Pyramidobacter                  |           2 | up          | 0.0649479   |            1 |         0.102549  |            0.102549  | PRJNA666746(+0.13);PRJNA822685(+0.0746)   |
+| g__Mobiluncus                      |           2 | up          | 0.00323962  |            1 |         0.102054  |            0.102054  | PRJNA666746(+0.139);PRJNA822685(+0.0649)  |
+| g__Tsuneonella                     |           2 | up          | 0.00157225  |            1 |         0.0999578 |            0.0999578 | PRJNA666746(+0.135);PRJNA822685(+0.0649)  |
+| g__Methylophilus                   |           2 | up          | 0.00677161  |            1 |         0.0977108 |            0.0977108 | PRJNA666746(+0.13);PRJNA822685(+0.0649)   |
+| g__Faecalibacterium                |           2 | up          | 0.0388238   |            1 |         0.0971921 |            0.0971921 | PRJNA666746(+0.111);PRJNA822685(+0.0836)  |
+| g__Lacticaseibacillus              |           2 | up          | 0.00157225  |            1 |         0.0965378 |            0.0965378 | PRJNA666746(+0.135);PRJNA822685(+0.0581)  |
+| g__Anaeroglobus                    |           2 | up          | 0.0101273   |            1 |         0.0951444 |            0.0951444 | PRJNA666746(+0.135);PRJNA822685(+0.0553)  |
+| g__Cupriavidus                     |           2 | up          | 0.00157225  |            1 |         0.0951444 |            0.0951444 | PRJNA666746(+0.135);PRJNA822685(+0.0553)  |
+| g__Desulfomicrobium                |           2 | up          | 0.00157225  |            1 |         0.0951444 |            0.0951444 | PRJNA666746(+0.135);PRJNA822685(+0.0553)  |
+| g__Achromobacter                   |           2 | up          | 0.0507519   |            1 |         0.0928974 |            0.0928974 | PRJNA666746(+0.13);PRJNA822685(+0.0553)   |
+| g__Desulfobulbus                   |           2 | up          | 0.0455351   |            1 |         0.0926741 |            0.0926741 | PRJNA666746(+0.111);PRJNA822685(+0.0746)  |
+| g__Sphingomonas                    |           2 | up          | 0.089467    |            1 |         0.0915881 |            0.0915881 | PRJNA666746(+0.109);PRJNA822685(+0.0746)  |
+| g__W5053                           |           2 | up          | 0.0113786   |            1 |         0.090569  |            0.090569  | PRJNA666746(+0.142);PRJNA822685(+0.0392)  |
+| g__Pseudoxanthomonas               |           2 | up          | 0.0388238   |            1 |         0.0900543 |            0.0900543 | PRJNA666746(+0.0889);PRJNA822685(+0.0912) |
+| g__Erysipelotrichaceae_UCG-006     |           2 | up          | 0.0993913   |            1 |         0.0878358 |            0.0878358 | PRJNA666746(+0.111);PRJNA822685(+0.0649)  |
+| g__Mediterraneibacter              |           2 | up          | 0.0388238   |            1 |         0.0862599 |            0.0862599 | PRJNA666746(+0.0889);PRJNA822685(+0.0836) |
+| g__Peptoniphilus                   |           2 | up          | 0.0440381   |            1 |         0.0858085 |            0.0858085 | PRJNA666746(+0.0704);PRJNA822685(+0.101)  |
+| g__Odoribacter                     |           2 | up          | 0.00157225  |            1 |         0.0824484 |            0.0824484 | PRJNA666746(+0.139);PRJNA822685(+0.0257)  |
+| g__Moraxella                       |           2 | up          | 0.0755559   |            1 |         0.0817419 |            0.0817419 | PRJNA666746(+0.0889);PRJNA822685(+0.0746) |
+| g__Stenotrophomonas                |           2 | up          | 0.0388238   |            1 |         0.080001  |            0.080001  | PRJNA666746(+0.0688);PRJNA822685(+0.0912) |
+| g__Parabacteroides                 |           2 | up          | 0.0457011   |            1 |         0.0762067 |            0.0762067 | PRJNA666746(+0.0688);PRJNA822685(+0.0836) |
+| g__Fretibacterium                  |           2 | up          | 0.0649479   |            1 |         0.0725733 |            0.0725733 | PRJNA666746(+0.119);PRJNA822685(+0.0257)  |
+| g__Halomonas                       |           2 | up          | 0.0475671   |            1 |         0.0661181 |            0.0661181 | PRJNA666746(+0.0911);PRJNA822685(+0.0412) |
+
+## Caveats
+
+- PRJNA813034 used an OTU (99% VSEARCH) route and is therefore a sensitivity validation rather than an equivalent DADA2 replication; effect signs for this cohort should be interpreted accordingly.
+- Cross-study comparisons at genus level are exploratory; primer/platform differences remain.
+- Raw and processed reads are excluded from Git; all tables/plots here are reproducible via scripts/overnight/.

@@ -36,3 +36,64 @@ env/
 # Regenerable download-monitoring logs
 **/logs/fastq_download.log
 **/logs/download_watch.log
+
+# Local scratch / testing
+.testwork/
+scripts/overnight/_make_sim.py
+
+# --- runtime / large bioinformatics artifacts ---
+**/raw/
+**/processed/
+**/logs/
+**/results/export/
+data/
+
+*.qza
+*.qzv
+*.biom
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.log
+
+*.lock
+*_done
+*_failed
+.*_done
+.*_failed
+
+.notify_state/
+.notify_state_v2/
+
+# Local/private configs
+opencode.json
+
+# Temporary script backups
+*.bak
+*.pre_ggfix
+*.before_depthfix
+
+# Archives
+*.tar.gz
+
+# Runtime integration state
+combined/*_exit
+combined/*status*
+combined/*setup_summary*
+
+# Notification scripts may contain private ntfy configuration
+notify_oscc.sh
+notify_oscc_v2.sh
+
+# Duplicate top-level integration outputs
+/combined/candidate_ranking.tsv
+/combined/cohort_effects.tsv
+/combined/cohort_summary.tsv
+/combined/consistent_genera.tsv
+/combined/effect_heatmap.png
+/combined/pipeline_retention.png
+/combined/top_candidates.png
+
+# Runtime exit codes
+*.exit
